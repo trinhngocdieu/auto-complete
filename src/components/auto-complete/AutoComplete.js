@@ -70,6 +70,8 @@ class AutoComplete extends Component {
         suggestions: matchedItems
       });
       this.showSuggestion();      
+    } else {
+      this.hideSuggestion();
     }
   };
 
