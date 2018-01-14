@@ -103,6 +103,22 @@ class AutoComplete extends Component {
         e.preventDefault();
         break;
       }
+      case Constant.KEYBOARD.PAGE_DOWN: { 
+        // Scroll to end
+        this.suggestionContainer.scrollTop = this.suggestionContainer.scrollHeight;
+        this.setState({
+          selectedIndex: this.state.suggestions.length - 1
+        });        
+        break;
+      }
+      case Constant.KEYBOARD.PAGE_UP: { 
+        // Scroll to top
+        this.suggestionContainer.scrollTop = 0;
+        this.setState({
+          selectedIndex: 0
+        });        
+        break;
+      }
       default: {
         break;
       } 
