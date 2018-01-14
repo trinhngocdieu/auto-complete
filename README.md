@@ -7,7 +7,7 @@ The deploy link is: [http://autocomplete-dieu.surge.sh/](http://autocomplete-die
 
 ## How to start
 - `npm install` or `yarn install`
-- `npm start`
+- `npm start` or `yarn start`
 
 ## Build the project
 - `npm run build` or `yarn build`
